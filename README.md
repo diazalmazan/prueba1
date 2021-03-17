@@ -36,17 +36,11 @@ WORKSPACE               AREA DE STAGING                         REPO (carpeta .g
 fichreros 
 en directorios                                                  Commits (paquetes de código sellado)
 
-## Almacenar credenciales remotas en GIT
-- Ejecutar $ git config credential.helper store
-- ALTERNATIVA Ejecutar $ git config --global credential.helper store
-- Realizar un push o pull para que se almacenen automaticamente las credenciales
-
-
 
 ## Comandos GIT
 
 |Comando                            |Descripción
-|:------                            |:------
+|:------:                          |:------
 |git init                           |Crea un nuevo repositorio en la carpta actual
 |git status                         |Obtiene el estado del workspace
 |git add                            |Añade archivos / carpetas al SCM por defecto de forma recursiva
@@ -74,6 +68,7 @@ en directorios                                                  Commits (paquete
 |git stash branch                   |Crea una nueva rama desde la rama actual añadiendo los cambios que hay en el stash
 |git remote                         |Lista los recursos remotos existentes
 |git remote add github https://github.com/diazalmazan/cursoGIT_proyecto1.git    |Añade un repositorio externo
+|git config credential.helper store |Permite almacenar las credenciales en memoria. Despues de ejecutarlo hay que hacer un push o pull para que guarde usuario y contraseña
 |git push github                    |Envia los cambios en el repostiorio (commit) al repositorio remotos
 |git fetch                          |Sincroniza el repositorio local con el repositorio remotos
 |git pull                           |Obtiene los datos del repositorio y actualiza el repositorio local y el workspace
